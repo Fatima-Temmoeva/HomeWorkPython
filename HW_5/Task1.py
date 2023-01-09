@@ -9,16 +9,14 @@ from random import randint
 
 
 def input_dat(name):
-    x = int(
-        input(f"{name}, введите количество конфет, которое возьмете от 1 до 28: "))
+    x = int(input(f"{name}, введите количество конфет, которое возьмете от 1 до 28: "))
     while x < 1 or x > 28:
         x = int(input(f"{name}, введите корректное количество конфет: "))
     return x
 
 
 def p_print(name, k, counter, value):
-    print(
-        f"Ходил {name}, он взял {k}, теперь у него {counter}. Осталось на столе {value} конфет.")
+    print(f"Ходил {name}, он взял {k}, теперь у него {counter}. Осталось на столе {value} конфет.")
 
 def botMove(isFirst, userMove):
     flag = randint(0, 1)
